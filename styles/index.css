@@ -27,21 +27,24 @@ div.intro {
   color:rgba(6, 34, 51, 0.73)
 }
 .logo {
-  width: auto;
-  height: 130px;
+  width: 12%;
+  height: 12%;
+  transition: all 0.3s ease;
   margin-left: 10px;
   margin-top: 10px;
   border: solid white;
   border-radius: 5px;
 }
 img.animaux {
-  width: 15%;
-  border: 0;
+  width: 20%;
+  height: 20%;
+  border: 0px;
   float: none;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  margin-bottom: 0px;
 }
 
 @keyframes spin {
@@ -61,6 +64,14 @@ header h1 {
   font-size: 55px;
   border: 3px solid rgba(59, 148, 206, 0.273);
   border-radius: 35px;
+}
+
+header h2 {
+  font-family: Candara;
+  font-size: 37px;
+  margin: 0px;
+  padding: 0px;
+  color: rgba(6, 34, 51, 0.73);
 }
 
 nav {
@@ -170,22 +181,23 @@ fieldset {
 }
 
 a.info_hors_texte {
-  /*	border: solid black 1.5px;
-	border-style: ridge;
-*/
-  background-color: rgba(161, 161, 161, 0.29);
   font-weight: bold;
   color: black;
   padding: 10px 20px;
   border: 2px solid rgba(63, 130, 169, 0.493);
   border-radius: 10px;
   border-style: outset;
-  text-shadow: 1px 2px 15px white;
 }
 a.info_hors_texte:hover {
-  font-size: 20px;
-  color: white;
-  text-shadow: 1px 2px 15px black;
+  transition: ease-in-out 0.3s;
+  background-color: rgba(63, 130, 169, 0.329);
+  box-shadow: 0 0 10px rgba(21, 71, 104, 0.2);
+  color:white;
+}
+a.info_hors_texte:not(:hover) {
+  transition: ease-in-out 0.3s;
+  background-color: rgba(63, 130, 169, 0.212);
+  color: black;
 }
 .main {
   display: flex;
@@ -236,6 +248,7 @@ address a{
     flex-direction: column;
     gap: unset;
   }
+  nav {display: contents;}
 }
 
 input:hover, button:hover, .info_hors_texte:hover {
@@ -261,9 +274,7 @@ input:hover, button:hover, .info_hors_texte:hover {
     align-items: center;
   }
 
-  .logo {
-    height: 100px;
-  }
+
 
   input, label, fieldset {
     width: 100%;
