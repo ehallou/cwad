@@ -9,10 +9,13 @@ body {
   background-image: url("../img/bg_opacite.png");
   background-size: contain;
 }
-body main {
-  margin-left: 20px;
-  margin-right: 20px;
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
+
 body main section article {
   margin-bottom: 100px;
 }
@@ -88,10 +91,6 @@ nav a:hover {
   text-shadow: 1px 2px 15px rgba(21, 71, 104, 0.671);
 }
 
-main {
-  margin: auto;
-}
-
 main section h1 {
   font-size: 37px;
   text-decoration: underline;
@@ -134,7 +133,11 @@ main section article p {
   justify-content: center;
   align-items: center;
 }
+
 main form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   outline: 4px solid rgba(21, 71, 104, 0.273);
   background-color: rgba(95, 128, 190, 0.121);
   margin: 1rem;
@@ -143,13 +146,13 @@ main form {
   width: 100%;
 }
 
-label {
-  display: flex;
+label, input, fieldset {
+  width: 100%;
 }
-input {
-  outline: 4px solid rgba(21, 71, 104, 0.273);
-  margin-left: auto;
-  margin: 20px;
+input, select, textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 @media (max-width=500px) {
@@ -233,28 +236,9 @@ address a{
     gap: unset;
   }
 }
-/*.filleur {
-	width: 10%;
-	height: 5%;
-	margin-left: 5px;
-	margin-top: 0;
-	margin-bottom: 10px;
-	position: absolute;
-	right: 0px;
 
-}*/
-
-/*main section:nth-child(2)*/
-
-/*.paragraphes p{
-	font-size: 16px;
+input:hover, button:hover, .info_hors_texte:hover {
+  box-shadow: 0 0 10px rgba(59, 148, 206, 0.5);
+  transition: 0.3s ease-in-out;
 }
-.filler {
-	width: 50%;
-	height: 50%;
-	margin-left: 5px;
-	margin-top: 10px;
-	border: 5px solid black;
-	border-style: outset;
-	border-radius: 50px 20px;
-}*/
+
