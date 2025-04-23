@@ -59,17 +59,18 @@ header h1 {
   padding: 7px;
   margin: 35px;
   font-size: 55px;
-  border: 7px solid rgba(59, 148, 206, 0.273);
+  border: 3px solid rgba(59, 148, 206, 0.273);
+  border-radius: 35px;
 }
 
 nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  background-color: rgba(95, 128, 190, 0.121);
-  border: 3px solid rgba(59, 148, 206, 0.273);
-  padding: 10px;
+  gap: 25px;
+  background: none; 
+  border: none; 
 }
 
 nav a {
@@ -77,17 +78,18 @@ nav a {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.6);
   border: 2px solid rgba(59, 148, 206, 0.273);
-  padding: 8px 16px;
+  padding: 10px 40px;
   border-radius: 10px;
   transition: all 0.3s ease;
   font-weight: bold;
 }
 
 nav a:hover {
-  background-color: rgba(59, 148, 206, 0.2);
+  background-color: rgba(95, 128, 190, 0.121);
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(21, 71, 104, 0.2);
 }
+
 
 
 main section h1 {
