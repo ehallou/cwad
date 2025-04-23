@@ -1,0 +1,260 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+
+body {
+  background-color: #fafafa;
+  background-image: url("../img/bg_opacite.png");
+  background-size: contain;
+}
+body main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+body main section article {
+  margin-bottom: 100px;
+}
+div.intro {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color:rgba(6, 34, 51, 0.73)
+}
+.logo {
+  width: auto;
+  height: 130px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: solid white;
+  border-radius: 5px;
+}
+img.animaux {
+  width: 15%;
+  border: 0;
+  float: none;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header h1 {
+  background-color: rgba(95, 128, 190, 0.121);
+  font-family: Candara;
+  padding: 7px;
+  margin: 35px;
+  font-size: 55px;
+  border: 7px solid rgba(59, 148, 206, 0.273);
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  border: 3px solid rgba(59, 148, 206, 0.273);
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  color: black;
+  background-color: rgba(95, 128, 190, 0.121);
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border: 3px solid rgba(59, 148, 206, 0.273);
+  padding: 10px;
+  border-radius: 5px;
+
+  /*background-color:;
+	padding: 7px;
+	margin: 50px;
+	border: 2px solid;
+	border-style: hidden;
+	border-radius: 50px 20px; */
+}
+
+nav a:hover {
+  font-size: 20px;
+  text-shadow: 1px 2px 15px rgba(21, 71, 104, 0.671);
+}
+
+main {
+  margin: auto;
+}
+
+main section h1 {
+  font-size: 37px;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+main section h2 {
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color:rgba(6, 34, 51, 0.73);
+}
+h3{
+  color:rgba(25, 60, 83, 0.637);
+}
+main section div {
+  display: flex;
+  justify-content: center;
+}
+
+main section article p {
+  margin: 20px;
+}
+
+.accroche {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 15px;
+}
+.youtube {
+  max-width: 320px;
+  margin-right: 15px;
+  border: 4px solid rgba(21, 71, 104, 0.273);
+}
+.google {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  outline: 4px solid rgba(21, 71, 104, 0.273);
+  background-color: rgba(95, 128, 190, 0.121);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+label {
+  display: flex;
+}
+input {
+  outline: 4px solid rgba(21, 71, 104, 0.273);
+  margin-left: auto;
+  margin: 20px;
+}
+
+@media (max-width=500px) {
+  fieldset {
+    display: flex;
+    text-align: center;
+    width: auto;
+  }
+}
+
+fieldset {
+  outline: 3px solid rgba(21, 71, 104, 0.273);
+  margin-bottom: 30px;
+}
+
+a.info_hors_texte {
+  /*	border: solid black 1.5px;
+	border-style: ridge;
+*/
+  background-color: rgba(161, 161, 161, 0.29);
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid rgba(63, 130, 169, 0.493);
+  border-radius: 10px;
+  border-style: outset;
+  text-shadow: 1px 2px 15px white;
+}
+a.info_hors_texte:hover {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 2px 15px black;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+img {
+  max-width: 320px;
+  border: 4px solid rgba(21, 71, 104, 0.273);
+  border-radius: 0;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.imageflex {
+  display: block;
+  margin: 150px auto;
+  width: 60%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(95, 128, 190, 0.121);
+  border: 5px solid rgba(21, 71, 104, 0.273);
+  margin: 0px;
+  padding: 0px;
+  gap: 50px;
+}
+footer p {
+  margin: 20px;
+  float: left;
+  text-wrap: nowrap;
+}
+
+footer img {
+  float: left;
+  margin-left: 12px; 
+  margin-top: 12px;
+  border: hidden;
+}
+address a{
+  margin-right: 12px;
+}
+@media(max-width: 946px) {
+  footer {
+    flex-direction: column;
+    gap: unset;
+  }
+}
+/*.filleur {
+	width: 10%;
+	height: 5%;
+	margin-left: 5px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	position: absolute;
+	right: 0px;
+
+}*/
+
+/*main section:nth-child(2)*/
+
+/*.paragraphes p{
+	font-size: 16px;
+}
+.filler {
+	width: 50%;
+	height: 50%;
+	margin-left: 5px;
+	margin-top: 10px;
+	border: 5px solid black;
+	border-style: outset;
+	border-radius: 50px 20px;
+}*/
