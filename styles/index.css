@@ -63,33 +63,32 @@ header h1 {
 }
 
 nav {
-  text-align: center;
-  font-weight: bold;
-  border: 3px solid rgba(59, 148, 206, 0.273);
   display: flex;
-  justify-content: space-evenly;
-}
-nav a {
-  color: black;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
   background-color: rgba(95, 128, 190, 0.121);
-  margin-top: 7px;
-  margin-bottom: 7px;
   border: 3px solid rgba(59, 148, 206, 0.273);
   padding: 10px;
-  border-radius: 5px;
+}
 
-  /*background-color:;
-	padding: 7px;
-	margin: 50px;
-	border: 2px solid;
-	border-style: hidden;
-	border-radius: 50px 20px; */
+nav a {
+  color: black;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(59, 148, 206, 0.273);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 nav a:hover {
-  font-size: 20px;
-  text-shadow: 1px 2px 15px rgba(21, 71, 104, 0.671);
+  background-color: rgba(59, 148, 206, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(21, 71, 104, 0.2);
 }
+
 
 main section h1 {
   font-size: 37px;
@@ -155,7 +154,7 @@ input, select, textarea {
   border: 1px solid #ccc;
 }
 
-@media (max-width=500px) {
+@media (max-width:500px) {
   fieldset {
     display: flex;
     text-align: center;
@@ -241,4 +240,37 @@ input:hover, button:hover, .info_hors_texte:hover {
   box-shadow: 0 0 10px rgba(59, 148, 206, 0.5);
   transition: 0.3s ease-in-out;
 }
+
+@media (max-width: 500px) {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .imageflex {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  input, label, fieldset {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
 
